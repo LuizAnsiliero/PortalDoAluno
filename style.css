@@ -1,0 +1,27 @@
+:root {
+    --full: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                                                                            /*region [#1e1a1a]*/
+.widthmax {
+    width: 100%;
+}
+.heightmax {
+    height: 100%;
+}
+.flex {
+    display: flex;
+}
+                                                                            /*endregion*/
+                                                                            /*region [#12286199]*/
+header {
+    background-color: aqua;
+}
+body {
+    background-color: greenyellow;
+}
+                                                                            /*endregion*/
