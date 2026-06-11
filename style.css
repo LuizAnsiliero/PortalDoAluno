@@ -7,10 +7,10 @@
     box-sizing: border-box;
 }
                                                                             /*region [#1e1a1a]*/
-.widthmax {
+.wmax {
     width: 100%;
 }
-.heightmax {
+.htmax {
     height: 100%;
 }
 .flex {
@@ -20,6 +20,9 @@
                                                                             /*region [#12286199]*/
 header {
     background-color: aqua;
+}
+.navbar {
+    background-color: blue;
 }
 body {
     background-color: greenyellow;
