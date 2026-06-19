@@ -7,6 +7,9 @@
     box-sizing: border-box;
 }
                                                                             /*region [#1e1a1a]*/
+.flex {
+    display: flex;
+}
 .wmax {
     width: 100%;
 }
@@ -16,15 +19,26 @@
 .flex {
     display: flex;
 }
+.YellowBackground {
+    background-color: #FEBF00;
+}
+.BrownBackground {
+    background-color: #241F14;
+}
+.whiteBackground {
+    background-color: #fff;
+}
+.YellowFont {
+    color: #FEBF00;
+}
+.BrownFont {
+    color: #241F14;
+}
+.whiteFont {
+    color: #fff;
+}
+
                                                                             /*endregion*/
                                                                             /*region [#12286199]*/
-header {
-    background-color: aqua;
-}
-.navbar {
-    background-color: blue;
-}
-body {
-    background-color: greenyellow;
-}
+
                                                                             /*endregion*/
