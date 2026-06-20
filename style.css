@@ -42,4 +42,121 @@
                                                                             /*endregion*/
                                                                             /*region [#12286199]*/
 
-                                                                            /*endregion*/
+.pageContent {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 70px;
+    align-items: center;
+    background-color: #fff;
+}
+#separator {
+    gap: 10px;
+    display: flex;
+}
+#separator div{
+    height: 2px;
+    width: 30px;
+    align-self: center;
+    background-color: #FEBF00;
+}
+#separator span {
+    font-weight: bolder;
+    color: #241F14;
+}
+#hcontent {
+    width: 50vw;
+    height: auto;
+    border-radius: 10px;
+}
+#hcontent summary {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 20px;
+    margin: 1px;
+}
+#hcontent summary div {
+    background-color: #FEBF00;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    color: #241F14;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-color: #241F14;
+    border-radius: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.aulas {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+#first,
+#second {
+    display: flex;
+    border-radius: 10px;
+    background-color: #2D2A2A;
+    margin-left: 50px;
+    width: 60%;
+}
+.start {
+    margin-left: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    margin-right: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.start div:nth-child(1) {
+    height: 40px;
+    width: 2px;
+    background-color: #FEBF00;
+}
+.start div:nth-child(2) div {
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    margin: 2px;
+}
+.classinfo {
+    margin-top: 2px;
+    color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+    width: 80%;
+    height: 60px;
+    margin-left: 20px;
+}
+.classinfo p{
+    font-weight: bolder;
+}
+.classinfo img {
+    width: 20px;
+    height: 20px;
+}
+.classinfo footer {
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: 2px;
+}
+.classinfo footer p{
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 2px;
+}
+.classinfo footer div {
+    display: flex;
+    align-items: center;
+}
+/*endregion*/
