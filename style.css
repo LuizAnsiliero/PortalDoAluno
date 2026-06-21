@@ -335,7 +335,7 @@
 #bar {
     background-color: #241F14;
     height: 10px;
-    width: 100%;
+    width: 99%;
     border-radius: 40px;
     position: relative;
 }
@@ -362,3 +362,95 @@
 }
 /*endregion*/
 /*region[#6482]*/
+#moodle {
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+#mcontent {
+    width: 50vw;
+    justify-content: space-around;
+}
+#mlane {
+    justify-content: space-between;
+}
+#mlane p {
+    font-weight: bolder;
+    font-size: 14px;
+}
+.mimported {
+    background-color: #241F14;
+    width: 15vw;
+    height: 10vh;
+    border-radius: 20px;  
+    justify-content: center;
+}
+.mimported div {
+    flex-flow: column nowrap;
+    width: 90%;
+    height: 80%;
+    align-self: center;
+}
+header {
+    width: 90%;
+    align-self: center;
+    margin-top: 5px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.mimported span {
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.mimported p {
+    font-size: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+#statusr {
+    background-color: red;
+    font-size: 10px;
+    width: 70px;
+    border-radius: 20px;
+    align-items: center;
+}
+#statusg {
+    background-color: green;
+    font-size: 10px;
+    width: 70px;
+    border-radius: 20px;
+    align-items: center;
+}
+#statusw {
+    background-color: gray;
+    font-size: 10px;
+    width: 70px;
+    border-radius: 20px;
+    align-items: center;
+}
+#statusr p,
+#statusg p,
+#statusw p {
+    font-weight: bolder;
+    margin: 0;
+    padding: 1px;
+}
+#data {
+    flex-flow: row nowrap;
+    width: auto;
+    align-items: center;
+    height: 18px;
+}
+#data p{
+    font-size: 12px;
+    margin-top: 0px;
+}
+#data div {
+    width: 3px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin: 5px;
+}
+/*region[#8434]*/
