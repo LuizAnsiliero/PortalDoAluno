@@ -7,6 +7,11 @@
     box-sizing: border-box;
     font-family: Arial;
 }
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 /*region [#1e1a1a]*/
 .flex {
     display: flex;
@@ -38,14 +43,13 @@
 .whiteFont {
     color: #fff;
 }
-
-
 .pageContent {
     display: flex;
     flex-flow: column nowrap;
     gap: 70px;
     align-items: center;
     background-color: #fff;
+    width: 100%;
 }
 /*endregion*/
 /*region [#12286199]*/
@@ -454,3 +458,19 @@ header {
     margin: 5px;
 }
 /*region[#8434]*/
+#rodape {
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+}
+#rodape div:nth-child(1) {
+    width: 90%;
+    height: 80%;
+    background-color: #FEBF00;
+    flex-flow: column nowrap;
+}
+#rodape article img{
+    width: 150px;
+}
