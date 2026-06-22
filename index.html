@@ -340,7 +340,7 @@
                     <article id="frequencia" class="BrownBackground flex">
                         <aside id="circle">
                             <div class="whiteFont" id="border">
-                                <div class="BrownBackground" id="center"> 
+                                <div id="center"> 
                                     <p>26</p>
                                     <p>de 60</p>
                                 </div>
@@ -397,7 +397,7 @@
                     </div>
                 </div>
                 <section id="mcontent" class="flex">
-                    <article class="mimported whiteFont flex">
+                    <article class="mimported whiteFont flex BrownBackground">
                         <div class="flex">
                             <header class="flex">
                                 <div id="statusr" class="flex">
@@ -413,7 +413,7 @@
                             <p>Ativide Prática</p>
                         </div>
                     </article>
-                    <article class="mimported whiteFont flex">
+                    <article class="mimported whiteFont flex BrownBackground">
                         <div class="flex">
                             <header class="flex">
                                 <div id="statusw" class="flex">
@@ -429,7 +429,7 @@
                             <p>APS 06</p>
                         </div>
                     </article>
-                    <article class="mimported whiteFont flex">
+                    <article class="mimported whiteFont flex BrownBackground">
                         <div class="flex">
                             <header class="flex">
                                 <div id="statusg" class="flex">
@@ -452,45 +452,61 @@
 <!--endregion-->
 <!--region[#8434]-->
     <footer id="rodape" class="BrownBackground flex">
-        <div class="flex">
-            <div class="flex">
-                <article id="utf">
-                    <img src="img/UTFPRlogo.png" alt="logo">
-                    <p></p>
+        <section class="flex">
+            <article id="utf" class="flex">
+                <img src="img/UTFPRlogo.png" alt="logo">
+                <div class="whiteFont">
+                    <p>Universidade Federal tecnológica do paraná. Excelência em ensino, pesquisa e extensão tecnológica.</p>
+                </div>
+                <article id="newsletter" class="whiteFont">
+                    <p>Receba informações diretamente em seu Email</p>
+                    <form action="#" method="post" class="flex">
+                        <label for="mail">@UTFPR-GP</label>
+                        <div>
+                            <input type="email" name="mail" id="mail">
+                            <input type="submit" id="submit" value=">">
+                        </div>
+                    </form>
                 </article>
-                <article id="links">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </article>
-                <article id="support">
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                        <p></p>
-                    </div>
-                </article>
-            </div>
-            <div>
-                <p></p>
+            </article>
+            <article id="links" class="whiteFont">
+                <span>LINKS ÚTEIS</span>
+                <ul>
+                    <li>Portal institucional</li>
+                    <li>Bibliotecas</li>
+                    <li>Editais</li>
+                    <li>Calendário Acadêmico</li>
+                </ul>
+            </article>
+            <article id="support" class="whiteFont">
+                <span>SUPORTE AO ALUNO</span>
                 <div>
                     <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <p>Central de ajuda</p>
                 </div>
+                <div>
+                    <img src="" alt="">
+                    <p>DERAC - Protocolo</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p>Privacidade</p>
+                </div>
+            </article>
+        </section>
+        <div id="divisor"></div>
+        <aside class="whiteFont flex">
+            <div class="flex" id="version">
+                <p>PORTAL DO ALUNO V4.2.0</p>
+                <div></div>
+                <p>@ 2024 UTFPR</p>
             </div>
-        </div>
+            <div class="flex">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </aside>
     </footer>
 <!--endregion-->
 </body>

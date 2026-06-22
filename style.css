@@ -11,6 +11,7 @@ body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    background-color: #1E1A1A;
 }
 /*region [#1e1a1a]*/
 .flex {
@@ -30,7 +31,11 @@ body {
 }
 .BrownBackground {
     background-color: #241F14;
+    border: solid;
+    border-color: lightslategray;
+    border-width: 0.1px;
 }
+
 .whiteBackground {
     background-color: #fff;
 }
@@ -48,7 +53,6 @@ body {
     flex-flow: column nowrap;
     gap: 70px;
     align-items: center;
-    background-color: #fff;
     width: 100%;
 }
 /*endregion*/
@@ -56,6 +60,7 @@ body {
 #separator {
     gap: 10px;
     display: flex;
+    margin-bottom: 20px;
 }
 #separator div{
     height: 2px;
@@ -65,7 +70,7 @@ body {
 }
 #separator span {
     font-weight: bolder;
-    color: #241F14;
+    color: #fff;
 }
 /*endregion*/
 /*region [#312]*/
@@ -78,6 +83,7 @@ body {
     width: 40vw;
     height: 30vh;
     border-radius: 0px 0px 10px 10px;
+    border-top: 0;
 }
 #ccontent img {
     height: 80%;
@@ -270,6 +276,9 @@ body {
 #circle div p {
     z-index: 999;
 }
+#center {
+    background-color: #241F14;
+}
 #center p:nth-child(1){
     font-size: 22px;
     font-weight: bolder;
@@ -368,7 +377,6 @@ body {
 /*region[#6482]*/
 #moodle {
     flex-flow: column nowrap;
-    gap: 20px;
 }
 #mcontent {
     width: 50vw;
@@ -463,14 +471,90 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 400px;
-}
-#rodape div:nth-child(1) {
-    width: 90%;
-    height: 80%;
-    background-color: #FEBF00;
+    height: 390px;
+    font-size: 15px;
     flex-flow: column nowrap;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
 }
-#rodape article img{
+#rodape section {
+    width: 90%;
+    height: 55%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#rodape span {
+    font-weight: bolder;
+}
+#utf {
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+#utf img{
     width: 150px;
+}
+#utf div {
+    width: 50%;
+}
+form {
+    margin-top: 10px;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+}
+#newsletter p {
+    font-weight: bolder;
+}
+#newsletter div {
+    position: relative;
+    width: 250px;
+}
+#newsletter #mail {
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    border: none;
+}
+#newsletter #submit {
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 20px 20px 0px;
+    color: #fff;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #FEBF00;
+    font-weight: bolder;
+}
+#links li{
+    list-style: none;
+    margin-top: 25px;
+}
+#rodape aside {
+    width: 90%;
+    justify-content: space-between;
+}
+#rodape #divisor {
+    width: 90%;
+    background-color: #fff;
+    height: 3px;
+    border-radius: 20px;
+    opacity: 0.2;
+    margin-bottom: 20px;
+}
+#version {
+    gap: 20px;
+    font-weight: bold;
+}
+#version div {
+    width: 5px;
+    height: 5px;
+    background-color: #FEBF00;
+    align-self: center;
+    border-radius: 5px;
 }
