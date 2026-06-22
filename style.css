@@ -31,9 +31,7 @@ body {
 }
 .BrownBackground {
     background-color: #241F14;
-    border: solid;
-    border-color: lightslategray;
-    border-width: 0.1px;
+    box-shadow: black 1px 1px 10px ;
 }
 
 .whiteBackground {
