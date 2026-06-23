@@ -42,9 +42,6 @@ body {
     background-color: #1E1A1A;
 }
 /*region [#1e1a1a]*/
-.flex {
-    display: flex;
-}
 .wmax {
     width: 100%;
 }
