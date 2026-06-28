@@ -101,12 +101,153 @@ body {
 }
 /*endregion*/
 /*region[#924]*/
-haeder img{
-    width: 150px;
+nav {
+    flex-flow: row nowrap;
+    width: 100vw;
+    height: 6vh;
+    background-color: #241F14;  
+    gap: 30px;
 }
+nav img {
+    width: 120px;
+    height: 40px;
+    align-self: center;
+    margin: 20px;
+}
+#options {
+    justify-content: space-between;
+    width: 40%;
+}
+.services {
+    color: #fff;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.services label{
+    height: 100%;
+    align-content: center;
+    z-index: 400;
+}
+
+#alternate {
+    height: 0px;
+    width: 100vw;
+    background-color: #241F14;
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    transition: 0.1s ease-in;
+}
+ 
+.opts {
+    display: flex;
+    flex-flow: row wrap;
+    width: 82%;
+    gap: 30px;
+    justify-content: start;
+    position: absolute;
+}
+
+.btn {
+    width: 15vw;
+    height: 8vh;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    border-left: solid;
+    border-width: 10px;
+    border-color: #FEBF00;
+    opacity: 0;
+    visibility:hidden;
+}
+.btn i {
+    margin-left: 20px;
+    font-size: 40px;
+}
+.btn p {
+    font-weight: bolder;
+    height: 100%;
+    align-content: center;
+    text-transform: uppercase;
+}
+.check {
+    appearance: none;
+}
+.services p {
+    color: gray;
+    position: absolute;
+}
+#userinfo {
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+#userinfo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+#userinfo p {
+    color: #FEBF00;
+    font-weight: bolder;
+    font-size: 17px;
+}
+#userinfo i {
+    color: #fff;
+    font-size: 20px;
+    border-left: solid;
+    border-color: #fff;
+    width: 50px;
+    height: 80%;
+    border-width: 1px;
+    align-content: center;
+}
+body:has(#minhaarea:checked) .services,
+body:has(#curso:checked) .services,
+body:has(#docsedec:checked) .services,
+body:has(#insceaux:checked) .services,
+body:has(#seteprof:checked) .services {
+    visibility: hidden;
+}
+body:has(#minhaarea:checked) .services p,
+body:has(#curso:checked) .services p,
+body:has(#docsedec:checked) .services p,
+body:has(#insceaux:checked) .services p,
+body:has(#seteprof:checked) .services p {
+    visibility: visible;
+}
+body:has(#minhaarea:checked) #myarea,
+body:has(#curso:checked) #course,
+body:has(#docsedec:checked) #docsdec,
+body:has(#insceaux:checked) #insaux,
+body:has(#seteprof:checked) #secpro {
+    visibility: visible;
+}
+body:has(#minhaarea:checked) #myareaop .btn,
+body:has(#curso:checked) #courseop .btn,
+body:has(#docsedec:checked) #docsdecop .btn ,
+body:has(#insceaux:checked) #insauxop .btn,
+body:has(#seteprof:checked) #secproop .btn {
+    transition-delay: 0.1s;
+    visibility: visible;
+    opacity: 1;
+}
+
+body:has(.check:checked) #alternate {
+    height: 30vh;
+} 
 /*endregion*/
 /*region [#312]*/
 #carteira {
+    margin-top: 30px;
     width: 50vw;
     flex-flow: column nowrap;
     justify-content: center;
@@ -639,13 +780,13 @@ form {
     font-weight: bolder;
 }
 #newsletter div {
-    position: relative;
+    display: flex;
     width: 250px;
 }
 #mail {
     height: 30px;
-    width: 100%;
-    border-radius: 20px;
+    width: 80%;
+    border-radius: 20px 0px 0px 20px;
     background-color: #fff;
     border: none;
 }
@@ -657,7 +798,7 @@ form {
     border-radius: 0px 20px 20px 0px;
     color: #fff;
     border: none;
-    position: absolute;
+
     right: 0;
     top: 0;
     background-color: #FEBF00;

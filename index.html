@@ -47,17 +47,157 @@
 <!--endregion-->
 </head>
 <body>
-    <!--region[#]-->
+<!--region[#924]-->
     <header>
-        <img src="" alt="">
-        <nav>
-            <section id="Options"></section>
-            <section id="info"></section>
+        <nav class="flex">
+            <img src="img/UTFPRlogo.png" alt="Logo UTFPR">
+            <section id="options" class="flex">
+                <article id="myarea" class="services">
+                    <p>Minha área</p>
+                    <label for="minhaarea">Minha área</label>
+                    <input type="checkbox" name="selection" id="minhaarea" class="check">
+                </article>
+                <article id="course" class="services">
+                    <p>Curso</p>
+                    <label for="curso">Curso</label>
+                    <input type="checkbox" name="selection" id="curso" class="check">
+                </article>
+                <article id="docsdec" class="services">
+                    <p>Documentos e Declarações</p>
+                    <label for="docsedec">Documentos e Declarações</label>
+                    <input type="checkbox" name="selection" id="docsedec" class="check">
+                </article>
+                <article id="insaux" class="services">
+                    <p>Inscrições e Auxílios</p>
+                    <label for="insceaux">Inscrições e Auxílios</label>
+                    <input type="checkbox" name="selection" id="insceaux" class="check">
+                </article>
+                <article id="secpro" class="services">
+                    <p>Setores e Professores</p>
+                    <label for="seteprof">Setores e Professores</label>
+                    <input type="checkbox" name="selection" id="seteprof" class="check">
+                </article>
+            </section>
+            <article id="userinfo" class="flex">
+                <p>a2859831</p>
+                <img src="img/m3.jpg" alt="imagem do estudante">
+                <i class="fa-solid fa-bell"></i>
+            </article>
         </nav>
     </header>
-    <!--endregion-->
+<!--endregion-->
     <main>
-        <section class="pageContent">
+        <section class="pageContent"> 
+<!--region[#924]-->
+            <section id="alternate">
+                <section id="myareaop" class="opts">
+                    <article class="btn">
+                        <i class="fa-solid fa-clipboard"></i>
+                        <p>Atualização cadastral</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <p>Boletim</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-at"></i>
+                        <p>E-mail institucional</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-id-badge"></i>
+                        <p>Foto do Crachá</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-fingerprint"></i>
+                        <p>Identificação digital</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <p>Pasta do Aluno</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-mug-hot"></i>
+                        <p>Relatório de refeições</p>
+                    </article>
+                </section>
+                <section id="courseop" class="opts">
+                    <article class="btn">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                        <p>Disciplinas matriculadas</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-file-circle-minus"></i>
+                        <p>Cancelamento misciplina</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-folder-tree"></i>
+                        <p>Histórico completo</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-table-cells"></i>
+                        <p>Matrizes curriculares</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        <p>Reopção de curso</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                        <p>Minha Biblioteca</p>
+                    </article>
+                </section>
+                <section id="docsdecop" class="opts">
+                    <article class="btn">
+                        <i class="fa-solid fa-file-contract"></i>
+                        <p>Documentos</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-regular fa-paste"></i>
+                        <p>Documentos disponibilizados</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-align-left"></i>
+                        <p>Formulário</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-file-circle-question"></i>
+                        <p>Requerimento online</p>
+                    </article>
+                </section>
+                <section id="insauxop" class="opts">
+                    <article class="btn">
+                        <i class="fa-solid fa-bicycle"></i>
+                        <p>Cadastro de bicicletas</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <p>Auxílio estudantil</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <p>Monitoria</p>
+                    </article>
+                </section>
+                <section id="secproop" class="opts">
+                    <article class="btn">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <p>Mapa de professores</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <p>Avaliação do professor</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <p>Avaliação dos setores</p>
+                    </article>
+                    <article class="btn">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        <p>Relatório aval. Docente</p>
+                    </article>
+                </section>
+            </section>
+<!--endregion-->
 <!--region[#312]-->
             <article id="carteira" class="flex">
                 <aside class="separator">
@@ -65,7 +205,7 @@
                     <h2>CARTEIRA DO ESTUDANTE</h2>
                 </aside>
                 <section id="ccontent" class="BrownBackground flex">
-                    <img src="img/m3.jpg" alt="portrait">
+                    <img src="img/m3.jpg" alt="imagem do estudante">
                     <section id="cinfo" class="flex">
                         <span class="BrownFont YellowBackground">SITUAÇÃO: REGULAR</span>
                         <h4 class="whiteFont"> LUIZ EDUARDO FERREIRA ANSILIERO</h4>
