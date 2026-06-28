@@ -2,6 +2,9 @@
 <!--region[#1e1a1a]-->
     <!--Classes-->
 <!--endregion-->
+<!--region[#924]-->
+    <!--Navbar-->
+<!--endregion-->
 <!--region[#312]-->
     <!--Carteira do estudante-->
 <!--endregion-->
@@ -27,6 +30,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal do Aluno | UTFPR</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 <!--region[#1e1a1a]-->
 <!--classes:
     flex 
@@ -43,7 +47,7 @@
 <!--endregion-->
 </head>
 <body>
-    <div id="loadingScreen"></div>
+    <!--region[#]-->
     <header>
         <img src="" alt="">
         <nav>
@@ -51,11 +55,15 @@
             <section id="info"></section>
         </nav>
     </header>
+    <!--endregion-->
     <main>
         <section class="pageContent">
 <!--region[#312]-->
-            <article id="carteira">
-                <div class="YellowBackground"></div>
+            <article id="carteira" class="flex">
+                <aside class="separator">
+                    <div></div>
+                    <h2>CARTEIRA DO ESTUDANTE</h2>
+                </aside>
                 <section id="ccontent" class="BrownBackground flex">
                     <img src="img/m3.jpg" alt="portrait">
                     <section id="cinfo" class="flex">
@@ -73,278 +81,302 @@
                             </div>
                         </footer>
                     </section>
-                    <aside id="qrcode">
-                        <div>
-                            <input type="checkbox" name="qr" id="qr">
-                            <label for="qr"><img src="" alt=""></label>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                    </aside>
                 </section>
             </article>
 <!--endregion-->
 <!--region[#245]-->
-            <article id="horarios">
-                <div id="separator">
+            <article id="horarios" class="flex">
+                <aside class="separator">
                     <div></div>
-                    <span >HORÁRIO SEMANAL</span>
-                </div>
+                    <h2>HORÁRIOS SEMANAIS</h2>
+                </aside>
                 <section id="hcontent" class="BrownBackground">
                     <details>
                         <summary> 
-                            <div>
-                                <p>Seg</p>
-                            </div> 
-                            Segunda-feira
+                            <article class="flex day">
+                                <div>
+                                    <p>Seg</p>
+                                </div> 
+                                <p>Segunda-Feira</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </article>
                         </summary>
                             <section class="aulas">
-                                <section id="first" class="flex">
-                                    <div class="start">
-                                        <div></div>
-                                        <div>
+                                <section class="first">
+                                    <aside class="start startcl">
+                                        <article class="flex">
                                             <p>18:40</p>
                                             <div></div>
                                             <p>20:10</p>
-                                        </div>
-                                    </div>
+                                        </article>
+                                    </aside>
                                     <article class="classinfo">
                                         <p>Comunicação Linguística</p>
                                         <footer>
                                             <div>
-                                                <img src="img/locationicon.png" alt="local">
+                                                <i class="fa-solid fa-location-dot"></i>
                                                 <p>Sala B11</p>
                                             </div>
                                             <div>
-                                                <img src="img/professoricon.png" alt="professor">
+                                                <i class="fa-solid fa-graduation-cap"></i>
                                                 <p>Prof. Marizete</p>
                                             </div>
                                         </footer>
                                     </article>
+                                    <article class="abreviacao cl flex">
+                                        <h4>CL</h4>
+                                    </article>
                                 </section>
                             </section>
                     </details>
                     <details>
                         <summary> 
-                            <div>
-                                <p>Ter</p>
-                            </div> 
-                            Terça-feira
+                            <article class="flex day">
+                                <div>
+                                    <p>Ter</p>
+                                </div> 
+                                <p>Terça-Feira</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </article>
                         </summary>
                             <section class="aulas">
-                                <section id="first">
-                                    <div class="start">
-                                        <div></div>
-                                        <div>
+                                <section class="first">
+                                    <aside class="start startfsc">
+                                        <article class="flex">
                                             <p>18:40</p>
                                             <div></div>
                                             <p>20:10</p>
-                                        </div>
-                                    </div>
+                                        </article>
+                                    </aside>
                                     <article class="classinfo">
                                         <p>Fundamentos em sistemas para Internet</p>
                                         <footer>
                                             <div>
-                                                <img src="img/locationicon.png" alt="local">
+                                                <i class="fa-solid fa-location-dot"></i>
                                                 <p>Laboratório C1</p>
                                             </div>
                                             <div>
-                                                <img src="img/professoricon.png" alt="professor">
+                                                <i class="fa-solid fa-graduation-cap"></i>
                                                 <p>Prof. Sediane</p>
                                             </div>
                                         </footer>
                                     </article>
+                                    <article class="abreviacao fsc flex">
+                                        <h4>FSC</h4>
+                                    </article>
                                 </section>
-                                <section id="second">
-                                    <div class="start">
-                                        <div></div>
-                                        <div>
-                                            <p>20:10</p>
+                                <section class="second">
+                                    <aside class="start startdpwhc">
+                                        <article class="flex">
+                                            <p>18:40</p>
                                             <div></div>
-                                            <p>22:10</p>
-                                        </div>
-                                    </div>
+                                            <p>20:10</p>
+                                        </article>
+                                    </aside>
                                     <article class="classinfo">
                                         <p>Desenvolvimento de Páginas Web com HTML e CSS</p>
                                         <footer>
                                             <div>
-                                                <img src="img/locationicon.png" alt="local">
+                                                <i class="fa-solid fa-location-dot"></i>
                                                 <p>Laboratório C1</p>
                                             </div>
                                             <div>
-                                                <img src="img/professoricon.png" alt="professor">
+                                                <i class="fa-solid fa-graduation-cap"></i>
                                                 <p>Prof. Dênis</p>
                                             </div>
                                         </footer>
+                                    </article>
+                                    <article class="abreviacao dpwhc flex">
+                                        <h4>DPWHC</h4>
                                     </article>
                                 </section>
                             </section>
                     </details>
                     <details>
                         <summary> 
-                            <div>
-                                <p>Qua</p>
-                            </div> 
-                            Quarta-feira
+                            <article class="flex day">
+                                <div>
+                                    <p>Qua</p>
+                                </div> 
+                                <p>Quarta-Feira</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </article>
                         </summary>
                             <section class="aulas">
-                                <section id="first">
-                                    <div class="start">
-                                        <div></div>
-                                        <div>
+                                <section class="first">
+                                    <aside class="start startfsc">
+                                        <article class="flex">
                                             <p>18:40</p>
                                             <div></div>
                                             <p>20:10</p>
-                                        </div>
-                                    </div>
+                                        </article>
+                                    </aside>
                                     <article class="classinfo">
                                         <p>Fundamentos em sistemas para Internet</p>
                                         <footer>
                                             <div>
-                                                <img src="img/locationicon.png" alt="local">
+                                                <i class="fa-solid fa-location-dot"></i>
                                                 <p>Laboratório C1</p>
                                             </div>
                                             <div>
-                                                <img src="img/professoricon.png" alt="professor">
+                                                <i class="fa-solid fa-graduation-cap"></i>
                                                 <p>Prof. Sediane</p>
                                             </div>
                                         </footer>
                                     </article>
+                                    <article class="abreviacao fsc flex">
+                                        <h4>FSC</h4>
+                                    </article>
                                 </section>
-                                <section id="second">
-                                    <div class="start">
-                                        <div></div>
-                                        <div>
-                                            <p>20:10</p>
+                                <section class="second">
+                                    <aside class="start startic">
+                                        <article class="flex">
+                                            <p>18:40</p>
                                             <div></div>
-                                            <p>22:10</p>
-                                        </div>
-                                    </div>
+                                            <p>20:10</p>
+                                        </article>
+                                    </aside>
                                     <article class="classinfo">
                                         <p>Introdução à Computação</p>
                                         <footer>
                                             <div>
-                                                <img src="img/locationicon.png" alt="local">
+                                                <i class="fa-solid fa-location-dot"></i>
                                                 <p>Sala B11</p>
                                             </div>
                                             <div>
-                                                <img src="img/professoricon.png" alt="professor">
+                                                <i class="fa-solid fa-graduation-cap"></i>
                                                 <p>Prof. Carlos</p>
                                             </div>
                                         </footer>
                                     </article>
+                                    <article class="abreviacao ic flex">
+                                        <h4>IC</h4>
+                                    </article>
                                 </section>
                             </section>
                     </details>
                     <details>
                         <summary> 
-                            <div>
-                                <p>Qui</p>
-                            </div> 
-                            Quinta-feira
+                            <article class="flex day">
+                                <div>
+                                    <p>Qui</p>
+                                </div> 
+                                <p>Quinta-Feira</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </article>
                         </summary>
                             <section class="aulas">
-                                <section id="first">
-                                    <div class="start">
-                                        <div></div>
-                                        <div>
+                                <section class="first">
+                                    <aside class="start startdpwhc">
+                                        <article class="flex">
                                             <p>18:40</p>
                                             <div></div>
                                             <p>20:10</p>
-                                        </div>
-                                    </div>
+                                        </article>
+                                    </aside>
                                     <article class="classinfo">
                                         <p>Desenvolvimento de Páginas Web com HTML e CSS</p>
                                         <footer>
                                             <div>
-                                                <img src="img/locationicon.png" alt="local">
+                                                <i class="fa-solid fa-location-dot"></i>
                                                 <p>Laboratório C1</p>
                                             </div>
                                             <div>
-                                                <img src="img/professoricon.png" alt="professor">
+                                                <i class="fa-solid fa-graduation-cap"></i>
                                                 <p>Prof. Dênis</p>
                                             </div>
                                         </footer>
                                     </article>
+                                    <article class="abreviacao dpwhc flex">
+                                        <h4>DPWHC</h4>
+                                    </article>
                                 </section>
-                                <section id="second">
-                                    <div class="start">
-                                        <div></div>
-                                        <div>
-                                            <p>20:10</p>
+                                <section class="second">
+                                    <aside class="start startpclpv">
+                                        <article class="flex">
+                                            <p>18:40</p>
                                             <div></div>
-                                            <p>22:10</p>
-                                        </div>
-                                    </div>
+                                            <p>20:10</p>
+                                        </article>
+                                    </aside>
                                     <article class="classinfo">
                                         <p>Pensamento Computacional e Linguagem de Programação Visual</p>
                                         <footer>
                                             <div>
-                                                <img src="img/locationicon.png" alt="local">
-                                                <p>Sala dos Conselhos R</p>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                <p>Sala dos Conselhos</p>
                                             </div>
                                             <div>
-                                                <img src="img/professoricon.png" alt="professor">
-                                                <p>Prof. Diego / Prof. Renata</p>
+                                                <i class="fa-solid fa-graduation-cap"></i>
+                                                <p>Prof. Renata</p>
                                             </div>
                                         </footer>
+                                    </article>
+                                    <article class="abreviacao pclpv flex">
+                                        <h4>PCLPV</h4>
                                     </article>
                                 </section>
                             </section>
                     </details>
                     <details>
                         <summary> 
-                            <div>
-                                <p>Sex</p>
-                            </div> 
-                            Sexta-feira
+                            <article class="flex day">
+                                <div>
+                                    <p>Sex</p>
+                                </div> 
+                                <p>Sexta-Feira</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </article>
                         </summary>
                             <section class="aulas">
-                                <section id="first">
-                                    <div class="start">
-                                        <div></div>
-                                        <div>
+                                <section class="first">
+                                    <aside class="start startpclpv">
+                                        <article class="flex">
                                             <p>18:40</p>
                                             <div></div>
                                             <p>20:10</p>
-                                        </div>
-                                    </div>
+                                        </article>
+                                    </aside>
                                     <article class="classinfo">
                                         <p>Pensamento Computacional e Linguagem de Programação Visual</p>
                                         <footer>
                                             <div>
-                                                <img src="img/locationicon.png" alt="local">
-                                                <p>Sala dos Conselhos R</p>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                <p>Sala dos Conselhos</p>
                                             </div>
                                             <div>
-                                                <img src="img/professoricon.png" alt="professor">
-                                                <p>Prof. Diego / Prof. Renata</p>
+                                                <i class="fa-solid fa-graduation-cap"></i>
+                                                <p>Prof. Renata</p>
                                             </div>
                                         </footer>
                                     </article>
+                                    <article class="abreviacao pclpv flex">
+                                        <h4>PCLPV</h4>
+                                    </article>
                                 </section>
-                                <section id="second">
-                                    <div class="start">
-                                        <div></div>
-                                        <div>
-                                            <p>20:10</p>
+                                <section class="second">
+                                    <aside class="start startpclpv">
+                                        <article class="flex">
+                                            <p>18:40</p>
                                             <div></div>
-                                            <p>22:10</p>
-                                        </div>
-                                    </div>
+                                            <p>20:10</p>
+                                        </article>
+                                    </aside>
                                     <article class="classinfo">
                                         <p>Pensamento Computacional e Linguagem de Programação Visual</p>
                                         <footer>
                                             <div>
-                                                <img src="img/locationicon.png" alt="local">
-                                                <p>Sala dos Conselhos R</p>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                                <p>Sala dos Conselhos</p>
                                             </div>
                                             <div>
-                                                <img src="img/professoricon.png" alt="professor">
-                                                <p>Prof. Diego / Prof. Renata</p>
+                                                <i class="fa-solid fa-graduation-cap"></i>
+                                                <p>Prof. Renata</p>
                                             </div>
                                         </footer>
+                                    </article>
+                                    <article class="abreviacao pclpv flex">
+                                        <h4>PCLPV</h4>
                                     </article>
                                 </section>
                             </section>
@@ -354,41 +386,38 @@
 <!--region[#341]-->
             </article>
             <article id="desempenho">
-                <div id="separator">
+                <aside class="separator">
                     <div></div>
-                    <span>DESEMPENHO ACADẼMICO</span>
-                </div>
+                    <h2>DESEMPENHO ACADÊMICO</h2>
+                </aside>
                 <section id="dcontent" class="flex">
                     <article id="frequencia" class="BrownBackground flex">
                         <aside id="circle">
-                            <div class="whiteFont" id="border">
-                                <div id="center"> 
+                            <article class="whiteFont" id="border">
+                                <article id="center" class="flex"> 
                                     <p>26</p>
                                     <p>de 60</p>
-                                </div>
-                            </div>
+                                </article>
+                            </article>
                         </aside>
                         <article id="finfo" class="flex">
                             <div class="whiteFont flex">
                                 <span>Frequência Global</span>
                                 <p>Você registrou uma presença de 43% das aulas disponíveis no período letivo atual.</p>
                             </div>
-                            <div class="YellowFont">
-                                <!--Fazer mais tarde as demais opções...-->
-                            </div>
                         </article>
                     </article>
 <!--endregion-->
 <!--region[#321]-->
                     <article id="limite" class="whiteFont BrownBackground flex">
-                        <div class="flex" id="lcontent">
+                        <section class="flex" id="lcontent">
                             <span>Limite de Faltas</span>
                             <aside class="flex">
                                 <p>consumo total permitido</p>
                                 <p class="YellowFont">08 / 15</p>
                             </aside>
                             <article class="flex">
-                                <div id="barborder" class="flex">
+                                <article id="barborder" class="flex">
                                     <div id="bar" class="flex">
                                         <div id="fill"></div>
                                         <div id="line" class="flex">
@@ -396,76 +425,72 @@
                                             <div id="redline" class="flex"></div>
                                         </div>
                                     </div>
-                                </div>
-                                
+                                </article>
                             </article>
-                            <div>
-                                <!--Fazer mais tarde as demais opções...-->
-                            </div>
-                        </div>
+                        </section>
                     </article>
                 </section>
             </article>
 <!--endregion-->
 <!--region[#6482]-->
             <article id="moodle" class="flex">
-                <div id="mlane" class="flex">
-                    <div id="separator">
+                <aside id="mlane" class="flex">
+                    <aside class="separator">
                         <div></div>
-                        <span>ATIVIDADES MOODLE</span>
-                    </div>
-                    <div class="YellowFont">
+                        <h2>ATIVIDADES MOODLE</h2>
+                    </aside>
+                    <aside class="YellowFont">
                         <p>VER AMBIENTE VIRTUAL</p>
-                    </div>
-                </div>
+                    </aside>
+                </aside>
                 <section id="mcontent" class="flex">
                     <article class="mimported whiteFont flex BrownBackground">
-                        <div class="flex">
+                        <section class="flex">
                             <header class="flex">
-                                <div id="statusr" class="flex">
+                                <aside id="statusr" class="flex">
                                     <p>PENDENTE</p>
-                                </div>
-                                <div class="flex" id="data">
+                                </aside>
+                                <article class="flex" id="data">
                                     <p>18/06</p>
                                     <div></div>
                                     <p>23:59</p>
-                                </div>
+                                </article>
                             </header>
                             <span>Desenvolvimento de Páginas Web com HTML e CSS</span>
                             <p>Ativide Prática</p>
-                        </div>
+                        </section>
                     </article>
                     <article class="mimported whiteFont flex BrownBackground">
-                        <div class="flex">
+                        <section class="flex">
                             <header class="flex">
-                                <div id="statusw" class="flex">
+                                <aside id="statusw" class="flex">
                                     <p>ABERTO</p>
-                                </div>
-                                <div class="flex" id="data">
+                                </aside>
+                                <article class="flex" id="data">
                                     <p>23/06</p>
                                     <div></div>
                                     <p>23:59</p>
-                                </div>
+                                </article>
                             </header>
                             <span>Fudamentos em Sistemas Computacionais</span>
                             <p>APS 06</p>
-                        </div>
+                        </section>
                     </article>
                     <article class="mimported whiteFont flex BrownBackground">
-                        <div class="flex">
+                        <section class="flex">
                             <header class="flex">
-                                <div id="statusg" class="flex">
+                                <aside id="statusg" class="flex">
                                     <p>CONCLUÍDO</p>
-                                </div>
-                                <div class="flex" id="data">
+                                </aside>
+                                <article class="flex" id="data">
                                     <p>02/07</p>
                                     <div></div>
                                     <p>23:59</p>
-                                </div>
+                                </article>
                             </header>
                             <span>Desenvolvimento de Páginas Web com HTML e CSS</span>
                             <p>Landing page</p>
-                        </div>
+                        </section>
                     </article>
                 </section>
             </article>
@@ -492,7 +517,7 @@
                 </article>
             </article>
             <article id="links" class="whiteFont">
-                <span>LINKS ÚTEIS</span>
+                <h4>LINKS ÚTEIS</h4>
                 <ul>
                     <li>Portal institucional</li>
                     <li>Bibliotecas</li>
@@ -501,33 +526,33 @@
                 </ul>
             </article>
             <article id="support" class="whiteFont">
-                <span>SUPORTE AO ALUNO</span>
+                <h4>SUPORTE AO ALUNO</h4>
                 <div>
-                    <img src="" alt="">
+                    <i class="fa-solid fa-headset"></i>
                     <p>Central de ajuda</p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <i class="fa-solid fa-people-roof"></i>
                     <p>DERAC - Protocolo</p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <i class="fa-solid fa-shield-halved"></i>
                     <p>Privacidade</p>
                 </div>
             </article>
         </section>
         <div id="divisor"></div>
         <aside class="whiteFont flex">
-            <div class="flex" id="version">
+            <article class="flex" id="version">
                 <p>PORTAL DO ALUNO V4.2.0</p>
                 <div></div>
                 <p>@ 2024 UTFPR</p>
-            </div>
-            <div class="flex">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
+            </article>
+            <article class="flex" id="reference">
+                <i class="fa-solid fa-book"></i>
+                <i class="fa-solid fa-headset"></i>
+                <i class="fa-solid fa-building"></i>
+            </article>
         </aside>
     </footer>
 <!--endregion-->
