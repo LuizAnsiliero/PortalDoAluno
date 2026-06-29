@@ -107,16 +107,18 @@ nav {
     height: 6vh;
     background-color: #241F14;  
     gap: 30px;
+    position: relative;
 }
 nav img {
     width: 120px;
     height: 40px;
     align-self: center;
     margin: 20px;
+    transition: 0.3s ease;
 }
 #options {
     justify-content: space-between;
-    width: 40%;
+    width: 45%;
 }
 .services {
     color: #fff;
@@ -125,8 +127,23 @@ nav img {
     align-items: center;
     justify-content: center;
     font-weight: bolder;
+    border: none;
+    transition: 0.3 ease;
+    flex-flow: column;
+    position: relative;
+    padding: 10px;
+    flex-flow: column nowrap;
 }
+.services div {
+    width: 0px;
+    height: 3px;
+    background-color: #FEBF00;
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    transition: 0.2s ease;
 
+}
 .services label{
     height: 100%;
     align-content: center;
@@ -154,26 +171,25 @@ nav img {
 }
 
 .btn {
-    width: 15vw;
+    width: 14vw;
     height: 8vh;
     background-color: #fff;
     border-radius: 20px;
     margin-top: 20px;
     align-items: center;
     gap: 20px;
-    display: flex;
     border-left: solid;
     border-width: 10px;
     border-color: #FEBF00;
-    opacity: 0;
-    visibility:hidden;
+    display: none;
+    transition: 0.3s ease;
 }
 .btn i {
     margin-left: 20px;
     font-size: 40px;
 }
 .btn p {
-    font-weight: bolder;
+    font-weight: bold;
     height: 100%;
     align-content: center;
     text-transform: uppercase;
@@ -189,6 +205,8 @@ nav img {
     align-items: center;
     margin-left: auto;
     margin-right: 10px;
+    transition: 0.3s ease;
+    height: 100%;
 }
 #userinfo img {
     width: 40px;
@@ -236,14 +254,80 @@ body:has(#curso:checked) #courseop .btn,
 body:has(#docsedec:checked) #docsdecop .btn ,
 body:has(#insceaux:checked) #insauxop .btn,
 body:has(#seteprof:checked) #secproop .btn {
-    transition-delay: 0.1s;
-    visibility: visible;
-    opacity: 1;
+    display: flex;
+}
+body:has(#minhaarea:checked) #myarea,
+body:has(#curso:checked) #course,
+body:has(#docsedec:checked) #docsdec,
+body:has(#insceaux:checked) #insaux,
+body:has(#seteprof:checked) #secpro {
+    background-color: #fff;
+    color: #241F14;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: #FEBF00;
 }
 
+#options:has(#course:hover) #course div,
+#options:has(#myarea:hover) #myarea div,
+#options:has(#docsdec:hover) #docsdec div,
+#options:has(#insaux:hover) #insaux div,
+#options:has(#secpro:hover) #secpro div {
+    width: 100%;
+}
+body:has(#minhaarea:checked) #myarea div,
+body:has(#curso:checked) #course div,
+body:has(#docsedec:checked) #docsdec div,
+body:has(#insceaux:checked) #insaux div,
+body:has(#seteprof:checked) #secpro div {
+    display: none;
+}
 body:has(.check:checked) #alternate {
     height: 30vh;
 } 
+.btn:hover {
+    border-radius: 18px;
+    border-right: solid;
+    border-width: 15px;
+    background-color: #1E1A1A;
+    color: #FEBF00;
+    margin-top: 15px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: #fff;
+    gap: 5px;
+}
+nav img:hover {
+    width: 125px;
+    height: 45px;
+}
+#userinfo:hover{
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #2D2A2A;
+}
+#userinfo:hover i{
+    width: 50px;
+    height: 75px;
+    background-color: #FEBF00;
+    border-radius:30px;
+    border: none    ;
+    height: 100%;
+    color: #241F14;
+    right: 0;
+}
+#userinfo i:hover {
+    background-color: #fff;
+    border-radius:30px;
+    height: 100%;
+    color: #241F14;
+}
+#userinfo img:hover {
+    width: 45px;
+    height: 45px;
+}
 /*endregion*/
 /*region [#312]*/
 #carteira {
