@@ -108,6 +108,7 @@ nav {
     background-color: #241F14;  
     gap: 30px;
     position: relative;
+    box-shadow: black 0px 5px 10px;
 }
 nav img {
     width: 120px;
@@ -290,17 +291,17 @@ body:has(.check:checked) #alternate {
 .btn:hover {
     border-radius: 18px;
     border-right: solid;
-    border-width: 15px;
     background-color: #1E1A1A;
-    color: #FEBF00;
+    color: #fff;
     margin-top: 15px;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
     border-color: #fff;
-    gap: 5px;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 5px;
+    gap: 8px;
 }
 nav img:hover {
-    width: 125px;
+    width: 130px;
     height: 45px;
 }
 #userinfo:hover{
@@ -331,7 +332,7 @@ nav img:hover {
 /*endregion*/
 /*region [#312]*/
 #carteira {
-    margin-top: 30px;
+    margin-top: 50px;
     width: 50vw;
     flex-flow: column nowrap;
     justify-content: center;
@@ -351,7 +352,7 @@ nav img:hover {
     margin: 30px;
     border-radius: 20px;
 }
-#ccontent H4 {
+#ccontent h1 {
     font-size: 35px;
     font-weight: lighter;
     margin-top: 20px;
@@ -645,7 +646,7 @@ details {
     gap: 10px;
     width: 90%;
 }
-#finfo span {
+#finfo h3 {
     font-weight: bolder;
 }
 #finfo p {
@@ -664,7 +665,7 @@ details {
 #lcontent article{
     flex-flow: column nowrap;
 }
-#limite span {
+#limite h3 {
     font-weight: bolder;
     margin-bottom: 10px;
 }
