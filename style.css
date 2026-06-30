@@ -1,34 +1,3 @@
-/* Regiões do site: */
-/* region[/*region [#1e1a1a]*/
-    /* Classes */
-/* endregion */
-/*region [#12286199]*/
-    /* Separator */
-/* endregion */
-/*region[#924]*/
-    /* Navbar*/
-/*endregion*/
-/* region[#312] */
-    /* Carteira do estudante */
-/* endregion */
-/* region[#245] */
-    /* Horários */
-/* endregion */
-/* region[#341] */
-    /* Frequência */
-/* endregion */
-/* region[#321] */
-    /* Limite de faltas */
-/* endregion */
-/* region[#6482] */
-    /* Moodle */
-/* endregion */
-/* region[#8434] */
-    /* Classes */
-/* endregion */
-
-
-
 :root {
     --full: 100%;
 }
@@ -326,8 +295,8 @@ nav img:hover {
     color: #241F14;
 }
 #userinfo img:hover {
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
 }
 /*endregion*/
 /*region [#312]*/

@@ -1,0 +1,64 @@
+Regiões do site:
+
+/*region [#1e1a1a]*/
+
+Classes 
+
+/* endregion */
+/*region [#12286199]*/
+
+Separator
+
+/* endregion */
+/*region[#924]*/
+
+Navbar
+
+/*endregion*/
+/* region[#312] */
+
+Carteira do estudante
+
+/* endregion */
+/* region[#245] */
+
+Horários
+
+/* endregion */
+/* region[#341] */
+
+Frequência
+
+/* endregion */
+/* region[#321] */
+
+Limite de faltas
+
+/* endregion */
+/* region[#6482] */
+
+Moodle
+
+/* endregion */
+/* region[#8434] */
+
+Classes
+
+/* endregion */
+
+classes:
+
+<!--region[#1e1a1a]-->
+
+    flex;
+    wmax;
+    htmax;
+    flex;
+    YellowBackground;
+    BrownBackground;
+    whiteBackground;
+    YellowFont;
+    BrownFont;
+    whiteFont;
+
+<!--endregion-->
