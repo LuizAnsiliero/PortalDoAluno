@@ -324,7 +324,8 @@ nav img:hover {
     height: 80%;
     width: auto;
     margin: 30px;
-    border-radius: 20px;
+    border-radius: 500px;
+    transition: 0.3s ease-in-out;
 }
 #ccontent h1 {
     font-size: 35px;
@@ -336,6 +337,12 @@ nav img:hover {
     height: 90%;
     margin-top: 20px;
     flex-flow: column nowrap;
+}
+#cinfo div {
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
 }
 #cinfo span{
     font-size: 10px;
@@ -349,6 +356,13 @@ nav img:hover {
 #cinfo p {
     font-weight: bolder;
     margin-top: 20px;
+}
+#cinfo p:nth-child(2) {
+    font-weight: bolder;
+    color: #fff;
+    margin-top: 20px;
+    background-color: #FEBF00;
+    padding: 8px;
 }
 #cinfo footer {
     margin-top: auto;
@@ -373,6 +387,12 @@ nav img:hover {
 }
 #cinfo footer span {
     font-size: 20px;
+}
+#ccontent img:hover {
+    height: 90%;
+    width: auto;
+    margin: 20px;
+    border-radius: 10px;
 }
 /*endregion*/
 /*region[#245]*/
@@ -607,7 +627,6 @@ details:open .day i {
 }
 /*endregion*/
 /*region[#341]*/
-
 #dcontent {
     gap: 20px;
     width: 50vw;
@@ -675,6 +694,28 @@ details:open .day i {
 }
 #finfo p {
     font-size: 12px;
+}
+#materia {
+    margin-left: auto;
+    width: 10%;
+    height: 3vh;
+    font-weight: bolder;
+    align-self: flex-end;
+    background-color: #241F14;
+    color: #FEBF00;
+    border: solid;
+    border-width: 2px;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.1s ease-in-out;
+}
+#materia::selection("1") #materia {
+    background-color: #9C281A;
+}
+#materia:hover {
+    background-color: #FEBF00;
+    color: #241F14;
 }
 /*endregion*/
 /*region[#321]*/

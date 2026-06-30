@@ -175,7 +175,10 @@
                     <section id="cinfo" class="flex">
                         <span class="BrownFont YellowBackground">SITUAÇÃO: REGULAR</span>
                         <h1 class="whiteFont"> LUIZ EDUARDO FERREIRA ANSILIERO</h1>
-                        <p class="YellowFont">Sistemas Para Internet</p>
+                        <div class="flex">
+                            <p class="YellowFont">Sistemas Para Internet</p>
+                            <p></p>
+                        </div>
                         <footer class="flex">
                             <div>
                                 <p class="whiteFont">REGISTRO ACADÊMICO</p>
@@ -489,14 +492,23 @@
                     </details>
                 </section>
 <!--endregion-->
-<!--region[#341]-->
+
             </article>
             <article id="desempenho">
                 <aside class="separator">
                     <div></div>
                     <h2>DESEMPENHO ACADÊMICO</h2>
+                    <select name="materia" id="materia">
+                                    <option value="1">Global</option>
+                                    <option value="2">CL</option>
+                                    <option value="3">FSC</option>
+                                    <option value="3">IC</option>
+                                    <option value="3">DPWHC</option>
+                                    <option value="3">PCLPV</option>
+                                </select>
                 </aside>
                 <section id="dcontent" class="flex">
+<!--region[#341]-->
                     <article id="frequencia" class="BrownBackground flex">
                         <aside id="circle">
                             <article class="whiteFont" id="border">
@@ -510,6 +522,7 @@
                             <div class="whiteFont flex">
                                 <h3>Frequência Global</h3>
                                 <p>Você registrou uma presença de 43% das aulas disponíveis no período letivo atual.</p>
+                                
                             </div>
                         </article>
                     </article>
