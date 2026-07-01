@@ -18,6 +18,21 @@ body {
     overflow-x: hidden;
     background-color: #1E1A1A;
 }
+@property --globalcolor {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #fff;
+}
+@property --resto {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #2D2A2A; 
+}
+@property --presenca {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 60%;
+}
 /*region [#1e1a1a]*/
 .wmax {
     width: 100%;
@@ -117,12 +132,13 @@ nav img {
     bottom: 0;
     align-self: center;
     transition: 0.2s ease-in-out;
-
+    cursor: pointer;
 }
 .services label{
     height: 100%;
     align-content: center;
     z-index: 400;
+    cursor: pointer;
 }
 
 #alternate {
@@ -158,6 +174,7 @@ nav img {
     border-color: #FEBF00;
     display: none;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 .btn i {
     margin-left: 20px;
@@ -425,6 +442,7 @@ details {
     margin: 5px;
     border-radius: 10px;
     transition: 0.4s ease-in-out;
+    cursor: pointer;
 }
 .day p{
     font-weight: bolder;
@@ -469,7 +487,7 @@ details {
     border-radius: 10px;
     background-color: #2D2A2A;
     margin-left: 50px;
-    width: 60%;
+    width: 65%;
     height: 7vh;
     box-shadow: 5px 5px 10px 0px;
     transition: 0.4s ease-in-out;
@@ -479,7 +497,7 @@ details {
     border-radius: 10px;
     background-color: #2D2A2A;
     margin-left: 50px;
-    width: 60%;
+    width: 65%;
     height: 7vh;
     box-shadow: 5px 5px 10px 0px;
     transition: 0.4s ease-in-out;
@@ -625,12 +643,17 @@ details:open .day i {
 .second:hover {
     margin-left: 70px;
 }
+
 /*endregion*/
 /*region[#341]*/
 #dcontent {
     gap: 20px;
     width: 50vw;
     justify-content: space-evenly;
+}
+.none {
+    visibility: hidden;
+    display: none;
 }
 #frequencia {
     width: 100%;
@@ -653,11 +676,13 @@ details:open .day i {
     justify-content: center;
     position: relative;
     align-items: center;
-    background: conic-gradient(
-    #FEBF00 0% 40%, 
-    #2D2A2A 40% 100%
-    );
     z-index: 100;
+    background: conic-gradient(
+    var(--globalcolor) 0% var(--presenca), 
+    var(--resto) var(--presenca) 100%
+    );
+    transition: --globalcolor 0.5s ease, --resto 0.5s ease;
+    transition: --presenca 0.5s ease, --resto 0.5s ease;
 }
 #border #center {
     width: 80px;
@@ -673,12 +698,13 @@ details:open .day i {
     flex-flow: column nowrap;
     justify-content:center ;
 }
+
 #center p {
     font-size: 22px;
     font-weight: bolder;
 }
-#center p:nth-child(2){
-    font-size: 10px;
+.denominador {
+    font-size: 10px !important;
 }
 #finfo {
     flex-flow: column nowrap;
@@ -709,13 +735,106 @@ details:open .day i {
     padding: 5px;
     text-align: center;
     transition: 0.1s ease-in-out;
+    color: #1E1A1A;
 }
-#materia::selection("1") #materia {
-    background-color: #9C281A;
+#desempenho:has(#materia option[value="1"]:checked) #materia {
+    --globalcolor:#fff;
+    background-color: var(--globalcolor);
 }
-#materia:hover {
-    background-color: #FEBF00;
-    color: #241F14;
+#desempenho:has(#materia option[value="2"]:checked) #materia {
+    --globalcolor:var(--cl);
+    background-color: var(--globalcolor);
+}
+#desempenho:has(#materia option[value="3"]:checked) #materia {
+    --globalcolor:var(--fsc);
+    background-color: var(--globalcolor);
+}
+#desempenho:has(#materia option[value="4"]:checked) #materia {
+    --globalcolor:var(--ic);
+    background-color: var(--globalcolor);
+}
+#desempenho:has(#materia option[value="5"]:checked) #materia {
+    --globalcolor:var(--dpwhc);
+    background-color: var(--globalcolor);
+}
+#desempenho:has(#materia option[value="6"]:checked) #materia {
+    --globalcolor:var(--pclpv);
+    background-color: var(--globalcolor);
+}
+#desempenho:has(#materia option[value="1"]:checked) #border {
+    --globalcolor:#fff;
+    --presenca: 60%;
+    background: conic-gradient(
+    var(--globalcolor) 0% var(--presenca), 
+    var(--resto) var(--presenca) 100%
+    );
+}
+#desempenho:has(#materia option[value="2"]:checked) #border {
+    --globalcolor:var(--cl);
+    --presenca: 40%;
+    background: conic-gradient(
+    var(--globalcolor) 0% var(--presenca), 
+    var(--resto) var(--presenca) 100%
+    );
+}
+#desempenho:has(#materia option[value="3"]:checked) #border {
+    --globalcolor:var(--fsc);
+    --presenca: 50%;
+    background: conic-gradient(
+    var(--globalcolor) 0% var(--presenca), 
+    var(--resto) var(--presenca) 100%
+    );
+}
+#desempenho:has(#materia option[value="4"]:checked) #border {
+    --globalcolor:var(--ic);
+    --presenca: 60%;
+    background: conic-gradient(
+    var(--globalcolor) 0% var(--presenca), 
+    var(--resto) var(--presenca) 100%
+    );
+}
+#desempenho:has(#materia option[value="5"]:checked) #border {
+    --globalcolor:var(--dpwhc);
+    --presenca: 100%;
+    background: conic-gradient(
+    var(--globalcolor) 0% var(--presenca), 
+    var(--resto) var(--presenca) 100%
+    );
+}
+#desempenho:has(#materia option[value="6"]:checked) #border {
+    --globalcolor:var(--pclpv);
+    --presenca: 90%;
+    background: conic-gradient(
+    var(--globalcolor) 0% var(--presenca), 
+    var(--resto) var(--presenca) 100%
+    );
+}
+#desempenho:has(#materia option[value="1"]:checked) #globalnum ,
+#desempenho:has(#materia option[value="1"]:checked) #globalden,
+#desempenho:has(#materia option[value="1"]:checked) #variant1,
+#desempenho:has(#materia option[value="1"]:checked) #var1,
+#desempenho:has(#materia option[value="2"]:checked) #clnum,
+#desempenho:has(#materia option[value="2"]:checked) #clden,
+#desempenho:has(#materia option[value="2"]:checked) #variant2,
+#desempenho:has(#materia option[value="2"]:checked) #var2,
+#desempenho:has(#materia option[value="3"]:checked) #fscnum,
+#desempenho:has(#materia option[value="3"]:checked) #fscden,
+#desempenho:has(#materia option[value="3"]:checked) #variant3,
+#desempenho:has(#materia option[value="3"]:checked) #var3,
+#desempenho:has(#materia option[value="4"]:checked) #icnum,
+#desempenho:has(#materia option[value="4"]:checked) #icden,
+#desempenho:has(#materia option[value="4"]:checked) #variant4,
+#desempenho:has(#materia option[value="4"]:checked) #var4,
+#desempenho:has(#materia option[value="5"]:checked) #dpwhcnum,
+#desempenho:has(#materia option[value="5"]:checked) #dpwhcden,
+#desempenho:has(#materia option[value="5"]:checked) #variant5, 
+#desempenho:has(#materia option[value="5"]:checked) #var5,
+#desempenho:has(#materia option[value="6"]:checked) #pclpvnum,
+#desempenho:has(#materia option[value="6"]:checked) #pclpvden,
+#desempenho:has(#materia option[value="6"]:checked) #variant6,
+#desempenho:has(#materia option[value="6"]:checked) #var6 {
+    visibility: visible;
+    display: block;
 }
 /*endregion*/
 /*region[#321]*/
@@ -742,7 +861,7 @@ details:open .day i {
     align-items: center;
     margin-bottom: 20px;
 }
-#limite aside p:nth-child(2) {
+#limite .none {
     font-weight: bold;
     font-size:15px ;
 }
@@ -765,13 +884,53 @@ details:open .day i {
     position: relative;
 }
 #fill {
-    background-color: #FEBF00;
+    transition: --presenca 0.5s ease, --resto 0.5s ease;
+}
+#desempenho:has(#materia option[value="1"]:checked) #fill {
+    --presenca: 34%;
+    background-color: #fff;
     height: 10px;
-    width: 45%;
+    width: var(--presenca);
     border-radius: 40px;
 }
+#desempenho:has(#materia option[value="2"]:checked) #fill {
+    --presenca: 75%;
+    background-color: var(--cl);
+    height: 10px;
+    width: var(--presenca);
+    border-radius: 40px;
+}
+#desempenho:has(#materia option[value="3"]:checked) #fill {
+    --presenca: 66%;
+    background-color: var(--fsc);
+    height: 10px;
+    width: var(--presenca);
+    border-radius: 40px;
+}
+#desempenho:has(#materia option[value="4"]:checked) #fill {
+    --presenca: 50%;
+    background-color: var(--ic);
+    height: 10px;
+    width: var(--presenca);
+    border-radius: 40px;
+}
+#desempenho:has(#materia option[value="5"]:checked) #fill {
+    --presenca: 0%;
+    background-color: var(--dpwhc);
+    height: 10px;
+    width: var(--presenca);
+    border-radius: 40px;
+}
+#desempenho:has(#materia option[value="6"]:checked) #fill {
+    --presenca: 13%;
+    background-color: var(--pclpv);
+    height: 10px;
+    width: var(--presenca);
+    border-radius: 40px;
+}
+
 #line {
-    margin-left: 75%;
+    margin-left: 95%;
     height: 40px;
     width: 2px;
     background-color: red;
